@@ -8,6 +8,8 @@
 
 # React Autosuggest
 
+## Enhanced by using react-window
+
 ## Project Status
 
 Looking for maintainers!

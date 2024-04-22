@@ -14,6 +14,7 @@ export default class Item extends Component {
     onMouseLeave: PropTypes.func,
     onMouseDown: PropTypes.func,
     onClick: PropTypes.func,
+    style: PropTypes.object,
   };
 
   shouldComponentUpdate(nextProps) {

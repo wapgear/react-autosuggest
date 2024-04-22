@@ -1,6 +1,6 @@
 {
   "name": "react-autosuggest",
-  "version": "10.1.0",
+  "version": "10.2.0",
   "description": "WAI-ARIA compliant React autosuggest component",
   "main": "dist/index.js",
   "repository": {
@@ -30,6 +30,7 @@
     "es6-promise": "^4.2.8",
     "prop-types": "^15.7.2",
     "react-themeable": "^1.1.0",
+    "react-window": "^1.8.10",
     "section-iterator": "^2.0.0",
     "shallow-equal": "^1.2.1"
   },

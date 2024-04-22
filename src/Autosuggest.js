@@ -96,6 +96,11 @@ export default class Autosuggest extends Component {
     theme: PropTypes.object,
     id: PropTypes.string,
     containerProps: PropTypes.object, // Arbitrary container props
+    largeList: PropTypes.bool,
+    largeListHeight: PropTypes.number,
+    largeListItemCount: PropTypes.number,
+    largeListItemSize: PropTypes.number,
+    largeListItemWidth: PropTypes.string,
   };
 
   static defaultProps = {
@@ -109,6 +114,11 @@ export default class Autosuggest extends Component {
     theme: defaultTheme,
     id: '1',
     containerProps: {},
+    largeList: false,
+    largeListHeight: 200,
+    largeListItemCount: 10,
+    largeListItemSize: 50,
+    largeListItemWidth: '100%',
   };
 
   constructor({ alwaysRenderSuggestions }) {
@@ -815,6 +825,11 @@ export default class Autosuggest extends Component {
         theme={mapToAutowhateverTheme(theme)}
         id={id}
         ref={this.storeAutowhateverRef}
+        largeList={this.props.largeList}
+        largeListHeight={this.props.largeListHeight}
+        largeListItemCount={this.props.largeListItemCount}
+        largeListItemSize={this.props.largeListItemSize}
+        largeListItemWidth={this.props.largeListItemWidth}
       />
     );
   }

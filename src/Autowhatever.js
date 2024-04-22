@@ -52,6 +52,11 @@ export default class Autowhatever extends Component {
       PropTypes.object,
       PropTypes.array,
     ]),
+    largeList: false,
+    largeListHeight: 200,
+    largeListItemCount: 10,
+    largeListItemSize: 50,
+    largeListItemWidth: '100%',
   };
 
   static defaultProps = {
@@ -75,6 +80,11 @@ export default class Autowhatever extends Component {
     highlightedSectionIndex: null,
     highlightedItemIndex: null,
     theme: defaultTheme,
+    largeList: false,
+    largeListHeight: 200,
+    largeListItemCount: 10,
+    largeListItemSize: 50,
+    largeListItemWidth: '100%',
   };
 
   constructor(props) {
@@ -234,6 +244,11 @@ export default class Autowhatever extends Component {
             theme={theme}
             keyPrefix={keyPrefix}
             ref={this.storeItemsListReference}
+            largeList={this.props.largeList}
+            largeListHeight={this.props.largeListHeight}
+            largeListItemCount={this.props.largeListItemCount}
+            largeListItemSize={this.props.largeListItemSize}
+            largeListItemWidth={this.props.largeListItemWidth}
           />
         </div>
       );
@@ -271,6 +286,11 @@ export default class Autowhatever extends Component {
         getItemId={this.getItemId}
         theme={theme}
         keyPrefix={`react-autowhatever-${id}-`}
+        largeList={this.props.largeList}
+        largeListHeight={this.props.largeListHeight}
+        largeListItemCount={this.props.largeListItemCount}
+        largeListItemSize={this.props.largeListItemSize}
+        largeListItemWidth={this.props.largeListItemWidth}
       />
     );
   }
